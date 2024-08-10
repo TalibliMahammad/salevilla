@@ -1,0 +1,1317 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.headinfo {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.188);
+}
+
+.headContact {
+    display: flex;
+    gap: 50px;
+}
+
+.headinfomail,
+.headinfoadress {
+    display: flex;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.menu {
+    margin: 8px;
+    background-color: rgb(215, 215, 215);
+    border-radius: 5px;
+    cursor: pointer;
+    display: none !important;
+    margin-right: 30px;
+
+}
+
+.menu div {
+    width: 40px;
+    position: relative;
+}
+
+.menu span {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.menu .line-1 {
+    transform: translate(-50%, -13px);
+}
+
+.menu .line-3 {
+    transform: translate(-50%, 8px);
+}
+
+.openmenu .line-1 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.openmenu .line-3 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.openmenu .line-2 {
+    width: 0px;
+}
+
+
+
+.fa-envelope,
+.fa-location-dot {
+    color: orangered;
+}
+
+.headsocial {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: orangered;
+    transition: 0.2s;
+}
+
+.fa-instagram:hover {
+    color: orangered;
+    transition: 0.2s;
+}
+
+.fa-linkedin:hover {
+    color: orangered;
+    transition: 0.2s;
+}
+
+.fa-x-twitter:hover {
+    color: orangered;
+    transition: 0.2s;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    height: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 19px;
+    align-items: center;
+
+}
+
+.burgermenu {
+    position: relative;
+    
+    
+
+}
+
+.burger {
+    display: flex;
+    transition: 1s;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.793);
+    z-index: 2;
+    height: 70vh;
+    width: 350px;
+    justify-content: center;
+    left: -100%;
+    align-items: center;
+    gap: 70px;
+
+}
+.burger li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.burger .scheduleinfo{
+    display: block;
+}
+
+li:hover {
+    color: orangered;
+    transition: 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.schedule {
+    background-color: rgb(37, 36, 35);
+    color: rgb(255, 255, 255);
+    width: 180px;
+    display: flex;
+    height: 35px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+
+.schedule:hover {
+    color: orangered;
+    transition: 0.2s;
+}
+
+.scheduleinfo {
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-calendar {
+    font-size: 20px;
+    color: white;
+    top: 4px;
+    left: 8px;
+}
+
+.iconscedule {
+    position: absolute;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    background-color: orangered;
+    border-radius: 40px;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.imgintro {
+    background-image: url(banner-01.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgintro1 {
+    background-image: url(banner-02.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgintro2 {
+    background-image: url(banner-03.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imginfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.infotext {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+.homeinfo1 {
+    color: rgb(255, 249, 249);
+    font-size: 3vw;
+}
+
+.info1 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 27px;
+    justify-content: center;
+    color: orangered;
+    font-weight: bolder;
+    width: 258px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.apartmentinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.infohead {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 30vh;
+}
+
+.infohead h3 {
+    font-size: 20px;
+    color: orangered;
+}
+
+.infohead h5 {
+    font-size: 270%;
+    color: rgb(39, 36, 36);
+}
+
+.lineleft {
+    background-color: orangered;
+    height: 20px;
+    width: 4px;
+}
+
+.line {
+    display: flex;
+    gap: 7px;
+}
+
+.allinfobox {
+    background-color: rgba(238, 234, 234, 0.148);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.homefiledimg {
+    height: 50px;
+    width: 50px;
+}
+
+.homefiledinfo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(211, 207, 207, 0.096);
+    border-radius: 10px;
+}
+
+.flatinfo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 13vh;
+    width: 35vh;
+    gap: 20px;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.182);
+}
+
+.flatinfotext span {
+    font-size: 35px;
+}
+
+.flatinfotext h5 {
+    color: rgba(0, 0, 0, 0.601);
+}
+
+.infobox1,
+.infobox2,
+.infobox3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.134);
+}
+
+
+.videobackandtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    background-image: url('video-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.videotext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.videotextintro span {
+    border-left: 5px solid orangered;
+    height: 25px;
+}
+
+.videotext h3 {
+    font-size: 25px;
+    color: orangered;
+}
+
+.videoinfotext {
+    font-size: 8vh;
+    color: white;
+    font-weight: bolder;
+}
+
+.videosection {
+    position: relative;
+}
+
+
+.videotextintro {
+    display: flex;
+    gap: 10px;
+}
+
+.videosec {
+    position: absolute;
+    top: 250px;
+}
+
+.undervideobox {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25vh;
+}
+
+.underbox1 {
+    background-color: #FFEEE9;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bolder;
+    position: relative;
+}
+
+.circleonunderbox {
+    height: 60px;
+    width: 60px;
+    background-color: orangered;
+    border-radius: 40px;
+    position: absolute;
+    right: -17px;
+    top: -18px;
+}
+
+.underbox1 h3 {
+    font-size: 35px;
+    color: orangered;
+    font-weight: bolder;
+}
+
+.underbox1 span {
+    font-size: 23px;
+    text-align: center;
+    width: 150px;
+}
+
+.bestsec {
+    background-color: rgba(128, 128, 128, 0.049);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    padding-bottom: 43px;
+}
+
+.bestdial {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
+}
+
+.bestdialtext {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bestdialtext span h3 {
+    color: orangered;
+    font-size: 20px;
+}
+
+.bestdialtext span {
+    display: flex;
+    gap: 8px;
+}
+
+.besttext {
+    font-size: 35px;
+
+}
+
+.linebest {
+    border-left: 4px solid orangered;
+    height: 20px;
+}
+
+.btns {
+    display: flex;
+    align-items: end;
+    height: 22vh;
+    gap: 11px;
+
+
+}
+
+.btns button {
+    width: 170px;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    background-color: orangered;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.roomssec {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+
+.rooms span {
+    color: rgba(0, 0, 0, 0.474);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.rooms {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.081);
+}
+
+.roominfowithimg {
+    height: 403px;
+    width: 413px;
+
+}
+
+.roomsinfotext {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.roomtext,
+p {
+    font-size: 14px;
+    line-height: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.roomtext {
+    width: 45vh;
+}
+
+.roomsinfo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.houseprice {
+    background-color: rgba(239, 239, 239, 0.886);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.housetext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+    text-align: center;
+    width: 350px;
+    padding-top: 20px;
+
+}
+
+.housetext h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: orangered;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.housetext h3 span {
+    border-left: 4px solid orangered;
+    height: 25px;
+}
+
+.housetext h6 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+
+}
+
+.houseinfo {
+    padding: 20px;
+    height: 242px;
+    width: 325px;
+}
+
+.houseinfo img {
+    border-radius: 10px;
+}
+
+.buildinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 336px;
+}
+
+.buildinfo h4 {
+    font-size: 17px;
+    height: 40px;
+    font-weight: bolder;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgba(255, 68, 0, 0.421);
+}
+
+.buildinfo h6 {
+    font-size: 25px;
+    color: orangered;
+}
+
+.houseinfobox {
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.852);
+    border-radius: 13px;
+    padding-bottom: 20px;
+    justify-content: center;
+    height: 587px;
+    width: 379px;
+    align-items: center;
+    display: flex;
+}
+
+.housediv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 25px;
+}
+
+.address {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    font-weight: bolder;
+    width: 330px;
+}
+
+.list1 ul li {
+    display: inline-block;
+    font-size: 15px;
+    color: #4a4a4a;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.list1 ul li span {
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 20px;
+
+}
+
+.list2 ul li {
+    display: inline-block;
+    font-size: 15px;
+    color: #4a4a4a;
+    margin-right: 20px;
+
+}
+
+.list2 li span {
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 20px;
+}
+
+.list2 ul {
+    display: flex;
+    gap: 0px;
+}
+
+.listbox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.schouseinfo {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.scinfobtn {
+    width: 150px;
+    background: transparent;
+    border-style: none;
+    background-color: black;
+    color: white;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 15px;
+}
+
+.scinfobtn:hover {
+    background-color: orangered;
+    transition: 0.8s;
+}
+
+.contact {
+    position: relative;
+}
+
+.backmap {
+    background-image: url(contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+
+}
+
+.maptext {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered;
+    align-items: center;
+
+
+}
+
+.linetext {
+    background-color: orangered;
+    height: 18px;
+    width: 3px;
+
+}
+
+.bigtext {
+    font-size: 55px;
+    width: 450px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.map {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333c8;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input {
+    border-radius: 40px;
+    background-color: rgba(128, 128, 128, 0.249);
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+    border-radius: 40px;
+    background-color: rgba(128, 128, 128, 0.249);
+}
+
+.form-group button {
+    width: 150px;
+    padding: 10px;
+    background-color: #181918;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+.mapandform {
+    display: flex;
+    justify-content: center;
+    bottom: -437px;
+    width: 100%;
+    gap: 20px;
+    position: absolute;
+
+}
+
+.conbox1 {
+    background-color: rgba(206, 202, 202, 0.49);
+    width: 255px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.number {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.num span {
+    color: rgba(0, 0, 0, 0.537);
+}
+
+.contactbox {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.phoneicon {
+    height: 50px;
+    width: 52px;
+}
+
+.mail {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.mailicon {
+    height: 43px;
+    width: 61px;
+}
+
+.mailbox span {
+    color: rgba(0, 0, 0, 0.537);
+}
+
+.conbox2 {
+    background-color: rgba(206, 202, 202, 0.49);
+    width: 255px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.mapplace {
+    height: 448px;
+    width: 518px;
+}
+
+
+@media only screen and (max-width: 1279px) {
+    .infohead h5 {
+        font-size: 35px;
+    }
+
+    .imgapart {
+        height: 350px;
+        width: 290px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 1144px) {
+    .btns button {
+        width: 133px;
+        height: 45px;
+    }
+
+    .roominfowithimg {
+        height: 403px;
+        width: 350px;
+    }
+
+    .roomssec {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width:1314px) {
+    .allinfobox {
+        width: 450px;
+    }
+
+    .infohead h5 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1037px) {
+    .undervideobox {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .btns button {
+        width: 120px;
+        height: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 1087px) {
+    .apartmentinfo {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .line {
+        justify-content: center;
+    }
+
+    .infobestapart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infohead h5 {
+        font-size: 45px;
+    }
+
+    .infohead {
+        margin-top: 20px;
+    }
+
+    .imgapart {
+        height: 500px;
+        width: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 1063px) {
+
+    .video {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1018px) {
+
+    .form-container {
+        width: 28%;
+
+    }
+
+    .mapdiv {
+        width: 456px;
+    }
+
+    .mapplace {
+        height: 447px;
+        width: 100%;
+    }
+
+    .map {
+        display: flex;
+        justify-content: end;
+    }
+
+    .number {
+        font-size: 20px;
+    }
+
+    .mail {
+        font-size: 20px;
+    }
+
+    .conbox1,
+    .conbox2 {
+        width: 220px;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    .bestdial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bestdialtext span {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .roomsinfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .roomtext p {
+        width: 40vh;
+
+    }
+
+}
+
+@media only screen and (max-width: 987px) {
+    ul li {
+        display: none;
+    }
+
+    .scheduleinfo {
+        display: none;
+    }
+
+    .menu {
+        display: block !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 864px) {
+    .mapdiv {
+        width: 376px;
+    }
+
+    .conbox1,
+    .conbox2 {
+        width: 177px;
+    }
+
+    .mailicon {
+        height: 28px;
+        width: 41px;
+    }
+
+    .phoneicon {
+        height: 37px;
+        width: 38px;
+    }
+
+    .number {
+        font-size: 16px;
+    }
+
+    .mail {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 829px) {
+    .videoinfotext {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    .undervideobox {
+        margin-top: 67px;
+    }
+}
+
+@media only screen and (max-width: 814px) {
+
+
+    .homefiledinfo {
+        margin-top: 30px;
+    }
+
+    .videobackandtext {
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-width: 771px) {
+    .homeinfo1 {
+        font-size: 30px;
+    }
+
+    .video {
+        width: 440px;
+        height: 370px;
+    }
+
+    .mapandform {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-bottom: -555px;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 64%;
+    }
+
+}
+
+@media only screen and (max-width: 639px) {
+    .video {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 656px) {
+    .headinfo {
+        display: none;
+    }
+
+    .mapplace {
+        height: 447px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 456px) {
+    .bigtext {
+        font-size: 39px;
+        width: 318px;
+    }
+
+    .allinfobox {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 421px) {
+    .video {
+        width: 350px;
+    }
+
+    .contactbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conbox1,
+    .conbox2 {
+        width: 280px;
+    }
+
+    .phoneicon {
+        height: 44px;
+        width: 44px;
+    }
+
+    .number,
+    .mail {
+        font-size: 26px;
+    }
+
+    .mailicon {
+        height: 38px;
+        width: 56px;
+    }
+
+    .backmap {
+        height: 79vh;
+    }
+
+    .mapdiv {
+        width: 310px;
+    }
+}
+
+@media only screen and (max-width: 402px) {
+    .imgapart {
+        height: 400px;
+        width: 335px;
+    }
+
+    .btns button {
+        width: 106px;
+        height: 60px;
+    }
+}
